@@ -1,4 +1,4 @@
-package com.algorithm.greedy;
+package com.algorithm.greedy.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * 소프티어 테스트케이스에서는 종료시간이 동일할 경우에 대한 처리가 없었던 것 같다.
  * 무조건 정렬이 같을 경우 어떻게 처리해야 할 것인지에 대한 고민이 필요할 것 같다.
  */
+//https://www.acmicpc.net/problem/1931
 public class BJ_1931 {
 
     public static ArrayList<Time> timeList = new ArrayList<>();

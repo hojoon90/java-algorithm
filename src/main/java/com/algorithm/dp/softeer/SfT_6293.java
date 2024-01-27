@@ -1,4 +1,4 @@
-package com.algorithm.dp;
+package com.algorithm.dp.softeer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

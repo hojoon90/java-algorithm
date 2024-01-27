@@ -1,4 +1,4 @@
-package com.algorithm.bfs_dfs;
+package com.algorithm.bfs_dfs.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,6 +15,7 @@ import java.util.ArrayList;
  * 간단히 말해서 맞는 조건을 찾았을때 모든 카운트들을 처리해준다.
  * 나머지는 비슷했고, 좌표 체크조건은 꼭 넣어주자...
  */
+//https://www.acmicpc.net/problem/2667
 public class BJ_2667 {
 
     public static int[][] field;

@@ -1,4 +1,4 @@
-package com.algorithm.greedy;
+package com.algorithm.greedy.softeer;
 
 import java.util.*;
 

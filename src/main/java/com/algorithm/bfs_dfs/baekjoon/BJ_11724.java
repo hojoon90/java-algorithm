@@ -1,4 +1,4 @@
-package com.algorithm.bfs_dfs;
+package com.algorithm.bfs_dfs.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * 그리고 모든 노드들을 확인해야 하므로 노드 갯수만큼 반복문을 돌려서 모든 노드를 확인해준다.
  * 물론 방문했던 노드이면 무시하고 다음으로 넘어간다.
  */
-
+//https://www.acmicpc.net/problem/11724
 public class BJ_11724 {
 
     public static ArrayList<ArrayList<Integer>> nodeList = new ArrayList<>();
