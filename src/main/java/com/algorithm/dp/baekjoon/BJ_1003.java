@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
  * 그렇기에 출력은 테스트 케이스가 0으로 넘어올 경우만 (1, 0)으로 노출해주고, 나머지 값은 (dp[n-1], dp[n])으로 출력해주면 된다.
  * 그리고 피보나치를 모두 계산하면 비효율적이므로 계산된 값은 dp배열에 넣어준다.
  */
+//https://www.acmicpc.net/problem/1003
 public class BJ_1003 {
 
     public static long[] dp = new long[41];
