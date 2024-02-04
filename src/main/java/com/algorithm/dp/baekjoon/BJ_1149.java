@@ -3,7 +3,6 @@ package com.algorithm.dp.baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
@@ -13,7 +12,7 @@ import java.util.StringTokenizer;
  * 현재 색상 가격과, 전에 세팅된 가격 중 현재 색을 제외한 나머지 색상의 가격중 가작 작은 값을 선택해서 더한다.
  * 이렇게 count 개수까지 배열을 돌면서 선택될 수 있는 모든 경우의 가격을 구한다.
  * 이 중 가장 작은 가격을 찾아서 출력해준다.
- *
+ * <p>
  * 이런 2중 배열을 사용할수 있는 경우는 최대한 2중배열을 이용해서 처리해주어야 할 것 같다.
  * 그리고 모든 길찾기 혹은 모든 케이스 찾기와 같은 문제 유형에 약하다는것도 이번에 깨달았다.
  * 해당 문제들을 좀 더 연습해봐야 할 것 같다.
