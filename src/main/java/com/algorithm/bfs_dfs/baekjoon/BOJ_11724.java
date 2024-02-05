@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * 물론 방문했던 노드이면 무시하고 다음으로 넘어간다.
  */
 //https://www.acmicpc.net/problem/11724
-public class BJ_11724 {
+public class BOJ_11724 {
 
     public static ArrayList<ArrayList<Integer>> nodeList = new ArrayList<>();
     public static boolean[] visited;

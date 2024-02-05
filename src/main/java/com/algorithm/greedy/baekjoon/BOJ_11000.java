@@ -15,7 +15,7 @@ import java.util.Scanner;
  * 만약 큐의 맨처음 종료시간이 다음 강의의 시작시간과 같거나 작으면 큐에서 제거한다. (수업이 끝나고 새로운 수업을 하기 때문에..?)
  */
 //https://www.acmicpc.net/problem/11000
-public class BJ_11000 {
+public class BOJ_11000 {
 
     public static void main(String[] args) {
 

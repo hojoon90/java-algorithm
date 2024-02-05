@@ -26,7 +26,7 @@ import java.io.InputStreamReader;
  * 둘 중 3이 제일 작기 때문에 min 함수를 통해 3이 나오는 것이다.
  */
 //https://www.acmicpc.net/problem/1463
-public class BJ_1463 {
+public class BOJ_1463 {
     public static int[] dp = new int[1000001];
 
     public static void main(String[] args) throws IOException {

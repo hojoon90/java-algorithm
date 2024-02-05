@@ -15,7 +15,7 @@ import java.util.*;
  * 이렇게 전좌표를 스캔하면 필요한 최소의 벌레수를 얻을 수 있다.
  */
 //https://www.acmicpc.net/problem/1012
-public class BJ_1012 {
+public class BOJ_1012 {
 
     public static int[] dx = {-1,1,0,0};
     public static int[] dy = {0,0,1,-1};

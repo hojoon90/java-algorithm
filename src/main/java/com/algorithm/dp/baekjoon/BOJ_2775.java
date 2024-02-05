@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
  * +1 처리때문에 애먹은 문제.
  */
 //https://www.acmicpc.net/problem/2775
-public class BJ_2775 {
+public class BOJ_2775 {
 
     public static int[][] apt;
 

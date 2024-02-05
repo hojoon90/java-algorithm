@@ -25,7 +25,7 @@ import java.io.InputStreamReader;
  * DP는 규칙만 잘 찾으면 구현의 난이도가 어느정도 줄어드는 것 같다.
  */
 //https://www.acmicpc.net/problem/9095
-public class BJ_9095 {
+public class BOJ_9095 {
 
     public static int[] dp = new int[11];
 

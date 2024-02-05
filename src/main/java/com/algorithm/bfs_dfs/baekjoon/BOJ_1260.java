@@ -26,7 +26,7 @@ import java.util.*;
  * - 출력 결과값은 맨 처음 노드의 서브노드 순으로 넓게 노드번호들이 출력된다.
  */
 //https://www.acmicpc.net/problem/1260
-public class BJ_1260 {
+public class BOJ_1260 {
     public static ArrayList<ArrayList<Integer>> nodeList = new ArrayList<>();
     public static boolean[] dfsVisited;
     public static boolean[] bfsVisited;

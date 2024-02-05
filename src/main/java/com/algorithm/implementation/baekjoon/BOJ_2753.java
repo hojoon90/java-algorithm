@@ -3,7 +3,7 @@ package com.algorithm.implementation.baekjoon;
 import java.util.Scanner;
 
 //https://www.acmicpc.net/problem/2753
-public class BJ_2753 {
+public class BOJ_2753 {
 
     public static void main(String[] args) {
 

@@ -22,7 +22,7 @@ import java.util.Queue;
  * while문을 탈출하면 distance 2차원배열의 마지막 값+1을 출력해준다. (+1은 스타트 값이 0이기 때문)
  */
 //https://www.acmicpc.net/problem/2178
-public class BJ_2178 {
+public class BOJ_2178 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

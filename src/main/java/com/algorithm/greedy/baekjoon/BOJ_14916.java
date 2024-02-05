@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 결국 price는 음수로 처리되므로 -1로 리턴
  */
 //https://www.acmicpc.net/problem/14916
-public class BJ_14916 {
+public class BOJ_14916 {
 
     public static void main(String[] args) {
 

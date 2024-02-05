@@ -6,10 +6,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- *
- */
-public class BJ_1655 {
+//https://www.acmicpc.net/problem/1655
+public class BOJ_1655 {
 
     public static ArrayList<Integer> sayList = new ArrayList<>();
     public static ArrayList<Integer> answerList = new ArrayList<>();

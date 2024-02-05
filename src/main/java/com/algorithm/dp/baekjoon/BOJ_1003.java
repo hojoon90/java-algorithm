@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
  * 그리고 피보나치를 모두 계산하면 비효율적이므로 계산된 값은 dp배열에 넣어준다.
  */
 //https://www.acmicpc.net/problem/1003
-public class BJ_1003 {
+public class BOJ_1003 {
 
     public static long[] dp = new long[41];
 

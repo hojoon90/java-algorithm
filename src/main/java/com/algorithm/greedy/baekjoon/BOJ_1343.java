@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 너무 꼬아서 생각해서 제대로 못 푼 문제
  */
 //https://www.acmicpc.net/problem/1343
-public class BJ_1343 {
+public class BOJ_1343 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String board = sc.next();

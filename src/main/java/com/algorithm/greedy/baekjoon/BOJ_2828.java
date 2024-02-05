@@ -13,7 +13,7 @@ import java.util.Scanner;
  * 이 포인트를 찾아서 바구니를 움직이는 카운트를 세어주면 된다.
  */
 //https://www.acmicpc.net/problem/2828
-public class BJ_2828 {
+public class BOJ_2828 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

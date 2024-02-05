@@ -18,7 +18,7 @@ import java.util.StringTokenizer;
  * 해당 문제들을 좀 더 연습해봐야 할 것 같다.
  */
 //https://www.acmicpc.net/problem/1149
-public class BJ_1149 {
+public class BOJ_1149 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

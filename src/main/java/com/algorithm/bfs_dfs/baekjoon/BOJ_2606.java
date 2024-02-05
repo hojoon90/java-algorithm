@@ -14,7 +14,7 @@ import java.util.*;
  * 방문한 노드 카운트를 별도 변수(virusCnt)에 저장해서 올려주고 bfs 탐색이 끝나면 카운트 수를 출력한다.
  */
 //https://www.acmicpc.net/problem/2606
-public class BJ_2606 {
+public class BOJ_2606 {
 
     public static ArrayList<ArrayList<Integer>> nodeList = new ArrayList<>();
     public static boolean[] bfsVisited;

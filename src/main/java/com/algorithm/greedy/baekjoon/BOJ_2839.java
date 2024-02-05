@@ -22,7 +22,7 @@ import java.util.Scanner;
  * 몫 기준으로 나머지 1,3은 +1 나머지 2,4 는 +2를 해준다. 그렇기에 그 조건에 맞게 값을 리턴해준다.
  */
 //https://www.acmicpc.net/problem/2839
-public class BJ_2839 {
+public class BOJ_2839 {
 
     public static void main(String[] args) {
 

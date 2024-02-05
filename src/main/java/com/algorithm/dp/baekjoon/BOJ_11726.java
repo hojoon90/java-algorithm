@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
  * 난이도에비해 생각보다... 간단하게 풀린 문제?
  */
 //https://www.acmicpc.net/problem/11726
-public class BJ_11726 {
+public class BOJ_11726 {
 
     public static int[] dp = new int[1001];
 

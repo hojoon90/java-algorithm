@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * 나머지는 비슷했고, 좌표 체크조건은 꼭 넣어주자...
  */
 //https://www.acmicpc.net/problem/2667
-public class BJ_2667 {
+public class BOJ_2667 {
 
     public static int[][] field;
     public static boolean[][] visited;

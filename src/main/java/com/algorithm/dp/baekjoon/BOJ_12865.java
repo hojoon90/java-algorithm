@@ -27,7 +27,8 @@ import java.util.StringTokenizer;
  *
  * 생각보다 이해가 잘 안돼서 몇번이고 계속 다시 보고 있는 문제;...
  */
-public class BJ_12865 {
+//https://www.acmicpc.net/problem/12865
+public class BOJ_12865 {
 
     public static int[] value;
     public static int[] weight;

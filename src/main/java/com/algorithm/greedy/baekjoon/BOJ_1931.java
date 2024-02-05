@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * 무조건 정렬이 같을 경우 어떻게 처리해야 할 것인지에 대한 고민이 필요할 것 같다.
  */
 //https://www.acmicpc.net/problem/1931
-public class BJ_1931 {
+public class BOJ_1931 {
 
     public static ArrayList<Time> timeList = new ArrayList<>();
 

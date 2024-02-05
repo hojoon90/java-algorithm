@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 
 //https://www.acmicpc.net/problem/11047
-public class BJ_11047 {
+public class BOJ_11047 {
 
     public static void main(String[] args) {
 
