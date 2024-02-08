@@ -60,16 +60,16 @@ public class BOJ_1697 {
                     next = pn * 2;
                 }
 
-                //계산한 좌표값중 목표 좌표값이 있으면 해당 좌표의 checked값을 출력.
-                if (next == K) {
-                    System.out.println(checked[pn]);
-                    return;
-                }
-
                 //checked에 한번도 들어가지 않았으면 큐에 좌표를 넣고 checked에 현재 이동 거리값 +1을 해준다.
                 if (next >= 0 && next < checked.length && checked[next] == 0) {
-                    q.add(next);
+                    q.offer(next);
                     checked[next] = checked[pn] + 1;
+                }
+
+                //계산한 좌표값중 목표 좌표값이 있으면 해당 좌표의 checked값을 출력.
+                if (next == K) {
+                    System.out.println(checked[next] - 1);
+                    return;
                 }
             }
 
