@@ -23,6 +23,7 @@ import java.util.Queue;
  * 치즈 문제처럼 체크된 곳 외부 부분을 확인해야하는 문제가 나오면 지금과 같은 방식으로 체크 후 처리해주면 될 것 같다.
  *
  */
+//https://www.acmicpc.net/problem/2638
 public class BOJ_2638 {
 
     public static int x;
