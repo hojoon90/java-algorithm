@@ -15,13 +15,17 @@ public class P1 {
         int count = Integer.parseInt(br.readLine());
         int[][] boxArr = new int[count][2];
 
-        for (int i = 0; i < 2; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < count; i++) {
             boxArr[i][1] = Integer.parseInt(st.nextToken());
+        }
+
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < count; i++) {
             boxArr[i][0] = Integer.parseInt(st.nextToken());
         }
 
-        Arrays.sort(boxArr, (o1, o2)-> o2[1] == o1[1] ? o1[0] - o2[0] : o1[1] - o2[1]);
+        Arrays.sort(boxArr, (o1, o2)->  o2[1] - o1[1]);
 
         int burn = 0;
         int eat = 0;
