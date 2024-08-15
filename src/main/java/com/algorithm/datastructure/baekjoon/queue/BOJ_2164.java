@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.baekjoon;
+package com.algorithm.datastructure.baekjoon.queue;
 
 import java.io.*;
 import java.util.*;

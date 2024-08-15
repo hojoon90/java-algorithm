@@ -1,18 +1,19 @@
-package com.algorithm.datastructure.baekjoon;
+package com.algorithm.datastructure.baekjoon.queue;
 
 import java.io.*;
 import java.util.*;
 
-public class BOJ_10845 {
+public class BOJ_18258 {
 
     public static void main(String[] args) throws IOException{
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int cmdCnt = Integer.parseInt(br.readLine());
-        String[] queue = new String[10001];
+        int[] queue = new int[2000001];
         int front = 0;
         int back = 0;
 
+        StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < cmdCnt; i++) {
             String cmdTxt = br.readLine();
@@ -21,37 +22,36 @@ public class BOJ_10845 {
 
             switch(cmd){
                 case "push":
-                    queue[back++] = st.nextToken();
+                    queue[back++] = Integer.parseInt(st.nextToken());
                     break;
                 case "front":
-                    String ftemp = front != back ? queue[front] : "-1";
-                    System.out.println(ftemp);
+                    int ftemp = front != back ? queue[front] : -1;
+                    sb.append(ftemp + "\n");
                     break;
                 case "back":
-                    String btemp = front != back ? queue[back-1] : "-1";
-                    System.out.println(btemp);
+                    int btemp = front != back ? queue[back-1] : -1;
+                    sb.append(btemp + "\n");
                     break;
                 case "size":
                     int size = back - front;
-                    System.out.println(size);
+                    sb.append(size + "\n");
                     break;
                 case "empty":
                     int isEmpty = front == back ? 1 : 0;
-                    System.out.println(isEmpty);
+                    sb.append(isEmpty + "\n");
                     break;
                 case "pop":
                     if(front != back) {
-                        System.out.println(queue[front++]);
+                        sb.append(queue[front++] + "\n");
                     }else{
-                        System.out.println("-1");
+                        sb.append(-1 + "\n");
                     }
                     break;
                 default:
                     break;
             }
-
-
         }
 
+        System.out.println(sb.toString());
     }
 }

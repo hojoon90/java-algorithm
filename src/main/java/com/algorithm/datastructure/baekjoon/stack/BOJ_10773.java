@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.baekjoon;
+package com.algorithm.datastructure.baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
