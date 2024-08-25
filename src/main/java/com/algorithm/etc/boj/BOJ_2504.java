@@ -16,44 +16,35 @@ public class BOJ_2504 {
         long num = 1;
 
         for(int i = 0; i < brackets.length; i++){
-            switch(brackets[i]){
-                case '(': {
-                    num *= 2;
-                    st.push(brackets[i]);
+            if(brackets[i] == '(') {
+                num *= 2;
+                st.push(brackets[i]);
+            } else if( brackets[i] ==  ')') {
+                if(st.isEmpty() || st.peek() != '(') {
+                    sum = 0;
                     break;
                 }
-                case ')': {
-                    if(st.isEmpty() || st.peek() != '(') {
-                        System.out.println(0);
-                        return;
-                    }
-                    if(brackets[i-1] == '(') sum += num;
-                    st.pop();
-                    num /= 2;
+                if(brackets[i-1] == '(') sum += num;
+                st.pop();
+                num /= 2;
+            }
+            else if( brackets[i] ==   '[') {
+                num *= 3;
+                st.push(brackets[i]);
+            }
+            else if( brackets[i] ==   ']') {
+                if(st.isEmpty() || st.peek() != '[') {
+                    sum = 0;
                     break;
                 }
-                case '[': {
-                    num *= 3;
-                    st.push(brackets[i]);
-                    break;
-                }
-                case ']': {
-                    if(st.isEmpty() || st.peek() != '[') {
-                        System.out.println(0);
-                        return;
-                    }
-                    if(brackets[i-1] == '[') sum += num;
-                    st.pop();
-                    num /= 3;
-                    break;
-                }
-                default: {
-
-                }
+                if(brackets[i-1] == '[') sum += num;
+                st.pop();
+                num /= 3;
             }
 
         }
-        System.out.println(sum);
+        if(!st.isEmpty()) System.out.println(0);
+        else System.out.println(sum);
 
     }
 }
