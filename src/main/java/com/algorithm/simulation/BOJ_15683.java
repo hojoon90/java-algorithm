@@ -81,7 +81,7 @@ public class BOJ_15683 {
     }
 
     static void upd(int x, int y, int dir){
-        dir %= 4;
+        dir %= 4;   //4방향 체크 시 값이 넘어가는걸 방지 하기 위해 처리
         while(true){
             x += dx[dir];
             y += dy[dir];
