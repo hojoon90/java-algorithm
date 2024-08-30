@@ -116,12 +116,14 @@ public class BOJ_14891 {
     }
 
     static void func(int num, int dir){
+        //배열에 각 톱니의 방향을 넣어준다.
         int[] dirs = new int[4];
         dirs[num] = dir;
 
         //왼쪽
-        int idx = num;
+        int idx = num;  //톱니바퀴 번호
         while(idx > 0 && board[idx][6] != board[idx-1][2]){
+            //역방향(-)을 넣어준다.
             dirs[idx-1] = -dirs[idx];
             idx--;
         }
@@ -129,6 +131,7 @@ public class BOJ_14891 {
         //오른쪽
         idx = num;
         while(idx < 3 && board[idx][2] != board[idx+1][6]){
+            //역방향(-)을 넣어준다.
             dirs[idx+1] = -dirs[idx];
             idx++;
         }
@@ -145,7 +148,7 @@ public class BOJ_14891 {
     static void rotate(boolean dir, int num){
 
         if(dir){ //정방향
-            char temp = board[num][board.length-1];
+            char temp = board[num][7];
             for (int i = 7; i > 0; i--) {
                 board[num][i] = board[num][i-1];
             }
@@ -155,7 +158,7 @@ public class BOJ_14891 {
             for (int i = 0; i < 7; i++) {
                 board[num][i] = board[num][i+1];
             }
-            board[num][board.length-1] = temp;
+            board[num][7] = temp;
         }
     }
 
