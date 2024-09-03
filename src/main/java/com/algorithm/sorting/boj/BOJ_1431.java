@@ -14,36 +14,33 @@ public class BOJ_1431 {
             serialArr[i] = br.readLine();
         }
         Arrays.sort(serialArr);
-        Arrays.sort(serialArr, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                if(o1.length() < o2.length()) {
+        Arrays.sort(serialArr, (o1, o2) ->{
+            if(o1.length() < o2.length()) {
+                return -1;
+            }
+            else if(o1.length() == o2.length()){
+                int o1Sum = 0;
+                int o2Sum = 0;
+
+                for (int i = 0; i < o1.length(); i++) {
+                    if(!Character.isAlphabetic(o1.charAt(i))){
+                        o1Sum += o1.charAt(i) - '0';
+                    }
+
+                    if(!Character.isAlphabetic(o2.charAt(i))){
+                        o2Sum += o2.charAt(i) - '0';
+                    }
+                }
+
+                if(o1Sum < o2Sum) {
                     return -1;
-                }
-                else if(o1.length() == o2.length()){
-                    int o1Sum = 0;
-                    int o2Sum = 0;
-
-                    for (int i = 0; i < o1.length(); i++) {
-                        if(!Character.isAlphabetic(o1.charAt(i))){
-                            o1Sum += o1.charAt(i) - '0';
-                        }
-
-                        if(!Character.isAlphabetic(o2.charAt(i))){
-                            o2Sum += o2.charAt(i) - '0';
-                        }
-                    }
-
-                    if(o1Sum < o2Sum) {
-                        return -1;
-                    }else if(o1Sum > o2Sum){
-                        return 1;
-                    }else{
-                        return 0;
-                    }
-                }else{
+                }else if(o1Sum > o2Sum){
                     return 1;
+                }else{
+                    return 0;
                 }
+            }else{
+                return 1;
             }
         });
 
