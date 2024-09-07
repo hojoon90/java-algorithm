@@ -1,4 +1,4 @@
-package com.algorithm.greedy.boj;
+package com.algorithm.greedy.boj2;
 
 import java.io.*;
 import java.util.*;

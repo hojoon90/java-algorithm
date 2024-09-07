@@ -1,4 +1,4 @@
-package com.algorithm.dp.boj;
+package com.algorithm.dp.boj2;
 
 import java.io.*;
 import java.util.*;
