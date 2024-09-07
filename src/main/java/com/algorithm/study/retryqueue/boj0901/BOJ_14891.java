@@ -1,4 +1,4 @@
-package com.algorithm.study.retryqueue;
+package com.algorithm.study.retryqueue.boj0901;
 
 /*
 https://www.acmicpc.net/problem/14891
