@@ -90,6 +90,7 @@ public class BOJ_11559 {
             for (int i = 0; i < 6; ++i) {
                 for (int j = 10; j >= 0 ; --j) {
                     int temp = j;
+                    //뿌요가 내려오는 로직 ( = 보드를 가로로 돌리면 배열의 위치 바꾸는것과 동일 )
                     while(temp < 11 && board[temp+1][i] == '.'){
                         char t = board[temp][i];
                         board[temp][i] = board[temp+1][i];
@@ -121,11 +122,11 @@ public class BOJ_11559 {
     }
 
     static void bfs(int x, int y){
-        visited[x][y] = true;
-        char val = board[x][y];
         Queue<Pair> q = new LinkedList<>();
         List<Pair> p = new ArrayList();
 
+        visited[x][y] = true;
+        char val = board[x][y];
         q.offer(new Pair(x, y));
         p.add(new Pair(x, y));
         while(!q.isEmpty()){
