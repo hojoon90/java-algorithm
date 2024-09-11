@@ -33,6 +33,7 @@ public class BOJ_15683 {
             }
         }
 
+        //4방향 ^ 카메라 개수
         int allDir = 1;
         for(int i = 0; i < cctv.size(); i++){
             allDir += 4;
