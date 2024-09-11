@@ -1,7 +1,6 @@
-package com.algorithm.study.retryqueue.boj0901;
+package com.algorithm.study.retryqueue.retry00;
 
 import java.io.*;
-import java.util.*;
 
 /*
 https://www.acmicpc.net/problem/10799
