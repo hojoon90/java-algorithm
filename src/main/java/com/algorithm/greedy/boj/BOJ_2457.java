@@ -26,7 +26,7 @@ public class BOJ_2457 {
         while(t < 1201/* or t <= 1130*/){
             int next_t = t;
             for (int i = 0; i < n; i++) {
-                //꽃이 피는 일자가 피길 원하는 날짜보다 작거나 같고, 끝나는 날짜가 다음 꽃이 피는 날짜보다 작으면?
+                //꽃이 피는 일자가 피길 원하는 날짜보다 작거나 같고, 끝나는 날짜가 다음 꽃이 피는 날짜보다 크면
                 if(flower[i].st <= t && flower[i].et > next_t){
                     //시작 지점에서 가장 오래 피는 꽃을 고른다.
                     next_t = flower[i].et;

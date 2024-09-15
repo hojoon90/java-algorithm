@@ -9,7 +9,7 @@ public class BOJ_1912 {
 
     public static void main(String[] args) throws IOException{
 
-        //a[i] > a[i] + a[i+1] ? a[i] = a[i] + a[i+1] : a[i]; index++
+        //a[i] = a[i] > a[i] + a[i+1] ? a[i] + a[i+1] : a[i]; index++
         //맨 앞 값보다 두개 더한게 더 크면 계속 더해진다.
         //크지 않으면 그냥 두고 다음수를 연속으로 더한다.
         //앞에서 부터 계속 더하는데 더한 값이 음수면 패스?
