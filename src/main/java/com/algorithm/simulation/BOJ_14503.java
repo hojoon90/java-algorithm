@@ -1,4 +1,4 @@
-package com.algorithm.implementation.boj;
+package com.algorithm.simulation;
 
 import java.io.*;
 import java.util.*;
