@@ -5,8 +5,6 @@ import java.util.*;
 
 public class BOJ_17266 {
 
-    static int[] road;
-
     public static void main(String[] args) throws IOException{
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,36 +13,32 @@ public class BOJ_17266 {
         int M = Integer.parseInt(br.readLine());
 
         String[] xArr = br.readLine().split(" ");
-        //가로등의 비출수 있는 앞뒤 수가 N보다 커야한다.
-        boolean allShow = false;
-        int h = 1;
-        road = new int[N+1];
-        while(true){
-            for(int i = 0; i < M; i++){
-                int x = Integer.parseInt(xArr[i]);
-                int back = x-h;
-                int front = x+h;
-                if(back < 0) back = 0;
-                if(front > N) front =N;
 
-                for (int j = back; j <= front; j++) {
-                    road[j] = 1;
+        int start =1;
+        int end=N;
+        int result=0;
+
+        //이분탐색
+        while(start <= end) {
+            int mid = (start+end)/2;
+
+            int prev = 0;
+            for(int i=0;i<M;i++) {
+                if(Integer.parseInt(xArr[i])-mid <= prev){
+                    prev=Integer.parseInt(xArr[i])+mid;
                 }
             }
+            boolean check = N - prev <= 0;//n까지 거리가 0이하인지 체크!
 
-            for(int i = 0; i <= N; i++){
-                allShow = true;
-                if(road[i] == 0){
-                    allShow = false;
-                    break;
-                }
+            if(check) {
+                result=mid;
+                end=mid-1;
             }
-            if(allShow) break;
-            road = new int[N+1];
-            h++;
+            else start=mid+1;
         }
 
-        System.out.println(h);
+        System.out.println(result);
+
     }
 
 }
