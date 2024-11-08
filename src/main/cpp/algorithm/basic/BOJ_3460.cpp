@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+//이진수 구하기
 int main(void){
     int t, n;
     cin >> t;
