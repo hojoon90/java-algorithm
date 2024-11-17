@@ -1,15 +1,26 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main(void){
-    int allScore = 0;
-    for(int i = 0; i < 5; i++){
-        int n;
-        cin >> n;
-        if( n < 40) n = 40;
-        allScore += n;
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    int arr[101]{0};
+    for(int tc = 0; tc < 3; tc++){
+        int s, e;
+        cin >> s >> e;
+
+        for(int i = s; i < e; i++){
+            arr[i]++;
+        }
     }
 
-    cout << allScore / 5 << endl;
 
+    int result = 0;
+    for(int i = 0; i <= 100; i++){
+        if(arr[i] == 1) result += a;
+        else if(arr[i] == 2) result += 2*b;
+        else if(arr[i] == 3) result += 3*c;
+    }
+
+    cout << result;
 }
