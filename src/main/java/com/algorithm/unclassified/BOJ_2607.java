@@ -15,7 +15,7 @@ public class BOJ_2607 {
             String word = br.readLine();
             int[] wordCnt = getCharCount(word);
 
-            if (isSimilar(firstCnt, wordCnt, firstWord.length(), word.length())) {
+            if (isSimilar(firstCnt, wordCnt)) {
                 cnt++;
             }
         }
@@ -33,8 +33,7 @@ public class BOJ_2607 {
     }
 
     // 두 단어가 유사한지 확인
-    private static boolean isSimilar(int[] firstCnt, int[] wordCnt, int firstLen, int wordLen) {
-        int diffCnt = 0; // 바꿔야 할 문자 개수
+    private static boolean isSimilar(int[] firstCnt, int[] wordCnt) {
         int addCnt = 0;  // 추가된 문자 개수
         int removeCnt = 0; // 제거된 문자 개수
 
@@ -48,9 +47,6 @@ public class BOJ_2607 {
 
         int totalDiff = removeCnt + addCnt;
 
-        // 1. 같은 단어 (totalDiff == 0)
-        // 2. 한 글자만 추가되거나 삭제된 경우 (totalDiff == 1)
-        // 3. 한 글자만 변경된 경우 (totalDiff == 2 && removeCnt == 1 && addCnt == 1)
         return totalDiff == 0 || totalDiff == 1 || (totalDiff == 2 && removeCnt == 1 && addCnt == 1);
     }
 }
