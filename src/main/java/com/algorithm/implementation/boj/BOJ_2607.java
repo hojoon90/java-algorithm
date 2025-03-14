@@ -1,4 +1,4 @@
-package com.algorithm.unclassified;
+package com.algorithm.implementation.boj;
 
 import java.io.*;
 
